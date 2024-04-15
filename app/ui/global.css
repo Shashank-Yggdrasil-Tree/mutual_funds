@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+	body {
+		overflow: scroll;
+	}
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+
+	.dark-bg-header {
+		background-color: #1f1f1f;
+		color: #dfdede;
+	}
+
+	.dark-bg-content {
+		background-color: #242424;
+		color: #dfdede;
+	}
+
+	.light-bg-header {
+		background-color: white;
+		color: #4b4847;
+	}
+
+	.light-bg-content {
+		background-color: white;
+		color: #4b4847;
+	}
+
+	.inset-center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
